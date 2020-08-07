@@ -1,4 +1,6 @@
-# 对于比较老的系统，如我的CentOS 6.5，所有的显卡驱动配置都存在/etc/X11/xorg.conf这个文件中，文件分为不同的Section，分别定义不同的功能，亮度相关的功能在Device部分。
+# 1. 比较老的系统
+
+对于比较老的系统，如我的CentOS 6.5，所有的显卡驱动配置都存在/etc/X11/xorg.conf这个文件中，文件分为不同的Section，分别定义不同的功能，亮度相关的功能在Device部分。
 
 因此，在Section "Device"部分添加
 
@@ -27,3 +29,5 @@ Section "Device"
 	Option "NoLogo" "True"
 EndSection
 ```
+
+# CREDIT: https://blog.csdn.net/Lockvictor/article/details/49254485
